@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Music | ${SITE_TITLE}`} description="Music produced by Valley of Ed." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Music</h1>
+			<p>
+				I make music in Ableton — primarily electronic, built for personal exploration 
+				rather than release. A selection of tracks below.
+			</p>
+			<p>
+				<em>SoundCloud embeds coming soon.</em>
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

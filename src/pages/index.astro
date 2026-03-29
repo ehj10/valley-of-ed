@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+	<h1>Valley of Ed</h1>
+	<p>
+		Essays on literature and philosophy. Music made in the margins. 
+		A record of the examined life.
+	</p>
+	<ul>
+		<li><a href="/blog">Essays</a></li>
+		<li><a href="/music">Music</a></li>
+		<li><a href="/career">Career</a></li>
+	</ul>
+</main>
+		<Footer />
+	</body>
+</html>

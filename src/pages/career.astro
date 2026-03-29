@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Career | ${SITE_TITLE}`} description="Professional background of Valley of Ed." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Career</h1>
+			<p>
+				I'm an accounts receivable associate with five years of experience, 
+				with a BA in Economics. I also offer tutoring in AP Microeconomics 
+				and Macroeconomics.
+			</p>
+			<h2>Experience</h2>
+			<p>Accounts Receivable Associate — 5 years</p>
+			<h2>Education</h2>
+			<p>BA in Economics</p>
+			<h2>Skills</h2>
+			<p>Accounts receivable, financial analysis, economics instruction.</p>
+			<h2>Contact</h2>
+			<p>Reach me at <a href="mailto:your@email.com">your@email.com</a></p>
+		</main>
+		<Footer />
+	</body>
+</html>
