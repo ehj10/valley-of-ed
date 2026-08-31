@@ -20,6 +20,11 @@ const posts = (await getCollection('blog')).sort(
 			main {
 				width: 960px;
 			}
+			.notice {
+				color: rgb(var(--gray));
+				font-style: italic;
+				margin-bottom: 2em;
+			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -89,6 +94,7 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
+			<p class="notice">✦ Essays coming soon. Check back shortly.</p>
 			<section>
 				<ul>
 					{
